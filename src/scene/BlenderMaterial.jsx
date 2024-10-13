@@ -30,7 +30,7 @@ const BlenderModel = () => {
 
     // Load HDRI Background using RGBELoader
     const rgbeLoader = new RGBELoader();
-    rgbeLoader.load('/public/bg.hdr', (texture) => {
+    rgbeLoader.load('/bg.hdr', (texture) => {
       texture.mapping = THREE.EquirectangularReflectionMapping; 
       scene.background = texture; 
       scene.environment = texture; 
